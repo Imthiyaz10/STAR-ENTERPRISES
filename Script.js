@@ -8,6 +8,10 @@ function toggleMenu() {
     navbar.classList.toggle("active");
 }
 
+// =========================
+// Java Script
+// =========================
+
 
 // Close mobile menu after clicking a link
 
