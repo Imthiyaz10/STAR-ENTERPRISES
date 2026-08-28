@@ -8,9 +8,10 @@ function toggleMenu() {
     navbar.classList.toggle("active");
 }
 
-// =========================
-// Java Script
-// =========================
+/* =========================
+   STAR ENTERPRISES WEBSITE
+   JavaScript Functions
+   ========================= */
 
 
 // Close mobile menu after clicking a link
