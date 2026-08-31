@@ -8,11 +8,6 @@
     box-sizing: border-box;
 }
 
-
-/* =========================
-   STAR ENTERPRISES WEBSITE
-   ========================= */
-
 html {
     scroll-behavior: smooth;
 }
@@ -48,6 +43,92 @@ a {
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
 }
 
+/* =========================
+   ABOUT PAGE
+========================= */
+
+.about-page {
+    min-height: 100vh;
+
+    padding: 150px 7% 100px;
+
+    background: #F4FBF5;
+}
+
+.about-page-content {
+    display: grid;
+
+    grid-template-columns: 1.3fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+.about-page-text h3 {
+    font-size: 32px;
+
+    margin-bottom: 20px;
+
+    color: #285C32;
+}
+
+.about-page-text p {
+    color: #58705D;
+
+    margin-bottom: 18px;
+
+    line-height: 1.8;
+}
+
+.about-page-box {
+    padding: 45px;
+
+    background: #FFFFFF;
+
+    border-left: 6px solid #72B77A;
+
+    box-shadow: 0 10px 30px rgba(40, 92, 50, 0.10);
+}
+
+.about-page-box h3 {
+    font-size: 30px;
+
+    color: #285C32;
+
+    margin-bottom: 5px;
+}
+
+.about-page-box > p {
+    color: #72B77A;
+
+    font-weight: bold;
+
+    margin-bottom: 25px;
+}
+
+.about-details {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.about-details span {
+    padding: 12px 15px;
+
+    background: #DFF3E1;
+
+    color: #285C32;
+
+    font-weight: 600;
+}
+
 .gallery-item {
     height: 300px;
     overflow: hidden;
@@ -65,6 +146,305 @@ a {
 
 .gallery-item:hover img {
     transform: scale(1.05);
+}
+
+/* =========================
+   PRODUCTS PAGE
+========================= */
+
+.products-page {
+    min-height: 100vh;
+    padding: 150px 7% 100px;
+    background: #F4FBF5;
+}
+
+.products-page .product-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.products-page .product-card {
+    background: #FFFFFF;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.products-page .product-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+
+.products-page .product-card h3 {
+    padding: 20px 20px 5px;
+}
+
+.products-page .product-card p {
+    padding: 0 20px 25px;
+}
+
+/* =========================
+   CONTACT PAGE
+========================= */
+
+.contact-page {
+    min-height: 100vh;
+    padding: 150px 7% 100px;
+    background: #F4FBF5;
+}
+
+.contact-page-content {
+    max-width: 1000px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+}
+
+.contact-card {
+    background: #FFFFFF;
+    padding: 40px;
+
+    border-top: 5px solid #72B77A;
+
+    box-shadow: 0 10px 30px rgba(40, 92, 50, 0.08);
+}
+
+.contact-card h3 {
+    font-size: 28px;
+    color: #285C32;
+    margin-bottom: 5px;
+}
+
+.contact-role {
+    color: #72B77A;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.contact-details p {
+    color: #58705D;
+    margin-bottom: 20px;
+}
+
+.contact-details a {
+    color: #4C9957;
+    font-weight: 600;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+.enquiry-card p {
+    color: #657568;
+    margin: 20px 0 30px;
+}
+
+.contact-button {
+    display: block;
+
+    width: 100%;
+
+    padding: 14px;
+
+    margin-bottom: 12px;
+
+    text-align: center;
+
+    background: #72B77A;
+    color: #FFFFFF;
+
+    font-weight: bold;
+
+    border: 2px solid #72B77A;
+
+    transition: 0.3s;
+}
+
+.contact-button:hover {
+    background: #285C32;
+    border-color: #285C32;
+}
+
+.phone-button {
+    background: transparent;
+    color: #285C32;
+}
+
+.phone-button:hover {
+    color: #FFFFFF;
+}
+
+/* =========================
+   PROJECTS PAGE
+========================= */
+
+.projects-page {
+    min-height: 100vh;
+    padding: 150px 7% 100px;
+    background: #F4FBF5;
+}
+
+.projects-intro {
+    max-width: 700px;
+    margin: -20px auto 50px;
+    text-align: center;
+}
+
+.projects-intro p {
+    color: #657568;
+}
+
+
+/* Project Layout */
+
+.projects-page .project-showcase {
+    max-width: 1200px;
+    margin: 0 auto 70px;
+
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+
+    gap: 45px;
+    align-items: center;
+}
+
+
+/* Project Images */
+
+.project-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.project-image {
+    height: 380px;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    border: 6px solid #FFFFFF;
+
+    border-radius: 8px;
+
+    box-shadow: 0 10px 30px rgba(40, 92, 50, 0.15);
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: 0.5s;
+}
+
+.project-image:hover img {
+    transform: scale(1.06);
+}
+
+
+/* Project Information */
+
+.projects-page .project-info {
+    padding: 40px;
+
+    background: #FFFFFF;
+
+    border-left: 6px solid #72B77A;
+
+    box-shadow: 0 10px 30px rgba(40, 92, 50, 0.08);
+}
+
+.project-label {
+    color: #72B77A;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+}
+
+.projects-page .project-info h3 {
+    margin-top: 12px;
+
+    font-size: 34px;
+
+    line-height: 1.2;
+
+    color: #285C32;
+}
+
+.projects-page .project-info p {
+    color: #657568;
+
+    margin-bottom: 25px;
+
+    line-height: 1.7;
+}
+
+
+/* Features */
+
+.project-features {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.project-features div {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+.project-features strong {
+    color: #72B77A;
+
+    font-size: 20px;
+}
+
+.project-features span {
+    color: #285C32;
+
+    font-weight: 600;
+}
+
+
+/* Mobile */
+
+@media (max-width: 900px) {
+
+    .projects-page .project-showcase {
+        grid-template-columns: 1fr;
+    }
+
+    .project-image {
+        height: 320px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .project-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-page .project-info {
+        padding: 30px;
+    }
 }
 
 /* =========================
